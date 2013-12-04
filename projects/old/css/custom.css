@@ -1,0 +1,113 @@
+.circular {
+	width: 150px;
+	height: 150px;
+	-webkit-border-radius: 75px;
+	-moz-border-radius: 75px;
+	border-radius: 75px;
+
+	background: url(http://www.gravatar.com/avatar/cbd668c10f6384662519c3a4875661a8?s=150) no-repeat;
+
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+	margin-bottom: 20px;
+	margin-top: 10px;
+	margin: 15px auto;
+	}
+
+.project-thumbnail {
+	height:270px;
+	text-align: center;
+}
+
+.project-thumbnail h5 {
+	text-align: center;
+}
+
+.project-thumbnail img {
+	height:130px;
+	width:250px;
+	margin: 0 auto;
+	margin-bottom:10px;
+}
+
+.article-thumbnail {
+	text-align: left;
+	vertical-align: center;
+}
+.article-thumbnail img {
+	height:80px;
+	width:80px;
+	margin-right:20px;
+	float:left; 
+}
+
+.project-thumbnail img:hover {
+	opacity: .8;  
+}
+
+.highlight:hover {
+	border:1px solid #cccccc;
+	background:#dddddd;
+}
+
+.facebook {
+	background:#3B5998;
+}
+
+.facebook:hover {
+	background-color: #3B5998;
+}
+
+.linkedin {
+	background:#2673b1;
+}
+
+.linkedin:hover {
+	background:#2673b1;
+}
+
+.github {
+	background: #333;
+}
+
+.github:hover {
+	background: #333;
+}
+
+.twitter {
+	background: #4099ff;
+}
+
+.twitter:hover {
+	background: #4099ff;
+}
+
+.button {
+	display: block;
+	width:100%;
+	padding: 5px 10px;
+	opacity:.9;
+	margin-bottom:10px;
+}
+
+.button:hover {
+	opacity:1;
+}
+
+#map {
+	height:90%;
+	width:100%;
+}
+
+#main-input {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+}
+
+#display-input {
+	position: absolute;
+	top: 0;
+}

@@ -1,61 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44d7e6d1-4def-46e3-89e6-3fe5e09c24e2" name="Default" comment="Fix top navigation bug, add id's to all navigation bar items.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/css/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/css/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/circuits-thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/clock/clock-picture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/clock-thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/coverage-thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/jordan-thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/kellymurray-thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/profile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/sentiment-thumbnail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/sw-beaker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/vonage-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular-cookies.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular-cookies.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular-loader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular-loader.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular-resource.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular-resource.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular-sanitize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular-sanitize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/js/angular-ui-ieshiv.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/css/angular-ui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/js/angular-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/birthday/channel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/clock/clock.pde" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/birthday/controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/js/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/js/controllers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/css/foundation.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/css/foundation.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/birthday/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/clock/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/coverage/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/sync/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/input.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/clock/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/clock/processing-1.4.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/result.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/js/services.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/summary/js/services.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/birthday/static_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/sync/test.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/rumble/lib/angular/version.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/vonage.jpeg" afterPath="" />
+    <list default="true" id="44d7e6d1-4def-46e3-89e6-3fe5e09c24e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/img/clock-thumbnail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/img/coverage-thumbnail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/img/jordan-thumbnail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/img/kellymurray-thumbnail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/img/profile.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/img/sentiment-thumbnail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/img/sw-beaker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/img/vonage-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/img/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/vendor/angular-cornercouch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/vendor/custom.modernizr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.alerts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.clearing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.cookie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.forms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.joyride.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.magellan.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/css/foundation.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.orbit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.placeholder.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.reveal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.tooltips.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/foundation/foundation.topbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/Resume/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/vendor/jquery.caret.1.01.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/vendor/jquery.caret.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/vendor/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/css/normalize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/projects/old/js/vendor/zepto.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Website.iws" />
@@ -82,7 +63,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="276" column="19" selection-start="12072" selection-end="12072" vertical-scroll-proportion="0.92671007" vertical-offset="3571" max-vertical-offset="5475">
+            <state line="275" column="91" selection-start="12253" selection-end="12253" vertical-scroll-proportion="0.4869707" vertical-offset="3826" max-vertical-offset="5820">
               <folding />
             </state>
           </provider>
@@ -191,6 +172,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="old" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="old" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,18 +386,23 @@
       <created>1385489888328</created>
       <updated>1385489888328</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add projects and create projects section.">
+      <created>1386178462826</created>
+      <updated>1386178462826</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6720867" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6720867" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -386,7 +412,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32791328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -403,7 +428,8 @@
     <MESSAGE value="Too big of a commit." />
     <MESSAGE value="Add top navigation, start jquery work." />
     <MESSAGE value="Make navigation Jquery magic, add intro link on title bar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make navigation Jquery magic, add intro link on title bar." />
+    <MESSAGE value="Add projects and create projects section." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add projects and create projects section." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -514,7 +540,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="276" column="19" selection-start="12072" selection-end="12072" vertical-scroll-proportion="0.92671007" vertical-offset="3571" max-vertical-offset="5475">
+        <state line="275" column="91" selection-start="12253" selection-end="12253" vertical-scroll-proportion="0.4869707" vertical-offset="3826" max-vertical-offset="5820">
           <folding />
         </state>
       </provider>
