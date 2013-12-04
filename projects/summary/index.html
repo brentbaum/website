@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/foundation.min.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/angular-ui.min.css"/>
+</head>
+<body ng-app="summaryApp">
+<div ng-controller="AppCtrl">
+    <div class="panel">
+        <h1 style="text-align: center">Readuce</h1>
+
+        <div class="panel-{{inputState}}">
+            <div class="row">
+                <div class="large-12 columns">
+                    <textarea placeholder="Text to summarize" ng-model="input"> </textarea>
+                </div>
+            </div>
+            <div class="row">
+                <a class="button large-6 large-offset-3 columns success" ng-click="summarize()">Go!</a>
+            </div>
+        </div>
+        <div class="panel-{{summaryState}}">
+            <div class="row">
+                <div class="large-12 columns">
+                    {{summary}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Panel which shows errors thrown by the application. -->
+
+        <div class="error-panel panel-{{errorState}}">
+            <div class="row">
+                <div class="large-12 columns">
+                    {{errorMessage}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="row">
+        <div class="columns large-12">
+            By <a href="http://brentbaum.com">Brent Baumgartner</a>.
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/controllers.js"></script>
+<script type="text/javascript" src="js/services.js"></script>
+<script type="text/javascript" src="js/angular-ui.min.js"></script>
+
+</body>
+</html>

@@ -88,6 +88,13 @@ i.circled-icon:hover {
   margin: 0 auto;
 }
 
+.portfolio-item img {
+    height: 150px;
+}
+.portfolio-item h4 {
+    padding-top: 10px;
+}
+
 
 /* Call to Action */
 

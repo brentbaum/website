@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/custom.css">
+		<link rel="stylesheet" type="text/css" href="../css/foundation.min.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<title>Uva Cell Service Map</title>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-38992530-1']);
+		  _gaq.push(['_setDomainName', 'brentbaum.com']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	</head>
+	<body>
+		<div class="row">
+			<h1>Cell Coverage at UVA</h1>
+			<h1 class="subheader">100% coverage on campus? I don't think so.</h1>
+		</div>
+		<div class="row">
+			<div class="small-9 columns">
+				<div id="map"></div>
+			</div>
+			<div class="small-3 columns legend panel">
+				<div class="red">No Service</div>
+				<div class="orange">One Bar</div>
+				<div class="yellow">Two Bars</div>
+				<div class="green">3-4 Bars</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?libraries=visualization&sensor=true"></script>
+		<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			var UVa = new google.maps.LatLng(38.033245, -78.517532);
+
+			map = new google.maps.Map(document.getElementById('map'), {
+			  center: UVa,
+			  zoom: 13,
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+			});
+			var ref = new Firebase('https://data-collection.firebaseIO.com/incoming');
+			var hData = [];
+			var mapCircles = [];
+			ref.on('child_added', function(msgSnapshot) {
+				var msgData = msgSnapshot.val();
+				console.log(msgData);
+
+				mapCircle = {
+				  	path: google.maps.SymbolPath.CIRCLE,
+				  	fillOpacity: 1,
+				 	scale: 5,
+					strokeColor: "white",
+					strokeWeight: 1
+				};
+
+				if(msgData.strength==0)
+					mapCircle.fillColor = "#ff0000";
+				if(msgData.strength==1)
+					mapCircle.fillColor = "#FF9D00";
+				else if(msgData.strength==2)
+					mapCircle.fillColor = "#BFFF00";
+				else if(msgData.strength==3 || msgData.strength==4)
+					mapCircle.fillColor = "#00cd00";
+				if(msgData.strength!=-1)
+					var marker = new google.maps.Marker({
+						position: new google.maps.LatLng(msgData.location.lat, msgData.location.lon),
+						    map: map,
+						    icon: mapCircle,
+						    title:"Service Strength: " + msgData.strength
+						});
+			});
+			function constructHeatMap() {
+				var heatMapData = condenseData(hData)
+				var heatmap = new google.maps.visualization.HeatmapLayer({
+				  data: heatMapData,
+				  radius: 20,
+				  maxIntensity:.1,
+				  dissipating: true
+				});
+				heatmap.setMap(map);
+			}
+			function condenseData() {
+				var tempList = [];
+				var heatDataList = [];
+				var added = false;;
+				for(var x = 0; x < hData.length; x++) {
+					for(var y = 0; y < tempList.length; y++)
+						if(hData[x].lat == tempList[y].lat && hData[x].lon == tempList[y].lon) {
+							tempList[y].str = (hData[x].str + tempList[y].str)/2;
+							added = true;
+							break;
+						}
+					if(!added)
+						tempList.push({lat:hData[x].lat, lon:hData[x].lon, strength:hData[x].str});
+					added = false;
+				}
+				for(var x = 0; x < tempList.length; x++) {
+					heatDataList.push({location: new google.maps.LatLng(tempList[x].lat, tempList[x].lon), weight: tempList[x].strength});
+				}
+				return heatDataList;
+			}
+		});
+		</script>
+	</body>
+</html>

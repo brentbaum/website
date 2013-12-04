@@ -1,0 +1,16 @@
+{
+	"edits" : {
+		"itrieabult123" : {
+			"value": "a",
+			"uppercase":true,
+			"index": 0,
+			"type": "+"	
+		},
+		"tnrsabuy12390" : {
+			"value": "t",
+			"uppercase":false,
+			"index": 1,
+			"type": "+"
+		}
+	}
+}

@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/custom.css">
+		<link rel="stylesheet" type="text/css" href="../css/foundation.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+		<title>
+			Document Sync
+		</title>
+		<script type="text/javascript">
+  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-38992530-1']);
+		  _gaq.push(['_setDomainName', 'brentbaum.com']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	<body>
+		<div class="row">
+			<div class="large-12 columns">
+				<input type="text" id="display-input"> <input type="text" id="main-input">
+			</div>
+		</div><script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'>
+</script><script type="text/javascript" src="../js/vendor/jquery.js">
+</script><script type="text/javascript">
+	/*Browser detection patch*/
+			jQuery.browser = {};
+			jQuery.browser.mozilla = /mozilla/.test(navigator.userAgent.toLowerCase()) && !/webkit/.test(navigator.userAgent.toLowerCase());
+			jQuery.browser.webkit = /webkit/.test(navigator.userAgent.toLowerCase());
+			jQuery.browser.opera = /opera/.test(navigator.userAgent.toLowerCase());
+			jQuery.browser.msie = /msie/.test(navigator.userAgent.toLowerCase());
+		</script><script type="text/javascript" src="../js/vendor/jquery.caret.min.js">
+</script><script type="text/javascript">
+			/* 
+			 * TODO:
+			 * Fix backspace bug
+			 * Only store last 20 changes to document
+			 */
+			var ref;
+			var shiftHeld;
+			$(document).ready(function() {
+				ref = new Firebase('https://document-sync.firebaseIO.com/');
+				clear_database();
+				var documentText = "";
+				var operation_list = ref.child("edits");
+				operation_list.on("child_added", function(operation_info) {
+					op = operation_info.val();
+					if(op.type=="+") {
+						if(!op.uppercase)
+							op.value = op.value.toLowerCase();
+						documentText = documentText.substring(0,op.index) + op.value + documentText.substring(op.index);
+					}
+					else if(op.index < documentText.length)
+						documentText = documentText.substring(0,op.index-1) + documentText.substring(op.index);
+					else
+						documentText = documentText.substring(0,op.index-1);
+					console.log(documentText);
+					$("#display-input").val(documentText);
+					$("#main-input").val(documentText);
+				});
+			});
+
+			$(document).keydown(function(e){
+				if($("#main-input").is(":focus")) {
+					var pos = $("#main-input").getCursorPosition();
+					//user pressed delete
+					if(e.keyCode==8) {
+						value = $("#main-input").text().charAt(pos-1);
+						uppercase = value.toLowerCase() != value;
+						deleted_char(value, pos, uppercase);
+					}
+					//user pressed an alphanumeric character or space
+					else if ( (e.keyCode > 46 && e.keyCode < 91) || e.keyCode == 32)
+						value = String.fromCharCode(e.keyCode);
+						console.log(e.keyCode);
+						uppercase = e.shiftKey;
+						inserted_char(value, pos, uppercase);
+				}
+			});
+
+			function inserted_char(value, pos, isCap) {
+				console.log("+ ",value,pos,isCap);
+				json = {"value" : value, uppercase: isCap, index : pos, type: "+"};
+				ref.child("edits").push(json);
+			}
+
+			function deleted_char(value, pos, isCap) {
+				console.log("- ",value,pos)
+				ref.child("edits").push({"value" : "del", uppercase: isCap, index : pos, type: "-"})
+			}
+
+			function clear_database() {
+				ref.child("edits").remove();
+			}
+
+			/*
+			 * Used to get the Caret position within a text input 
+			 */
+			jQuery.fn.getCursorPosition = function(){
+				if(this.lengh == 0) return -1;
+				return $(this).getSelectionStart();
+			}
+			jQuery.fn.getSelectionStart = function(){
+				if(this.lengh == 0) return -1;
+				input = this[0];
+
+				var pos = input.value.length;
+
+				if (input.createTextRange) {
+					var r = document.selection.createRange().duplicate();
+					r.moveEnd('character', input.value.length);
+					if (r.text == '') 
+					pos = input.value.length;
+					pos = input.value.lastIndexOf(r.text);
+				} else if(typeof(input.selectionStart)!="undefined")
+				pos = input.selectionStart;
+
+				return pos;
+			}
+		</script>
+	</body>
+</html>

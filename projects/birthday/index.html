@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script src="controller.js"></script>
+    <title>Birthday Graph</title>
+  </head>
+  <body ng-app>
+    <div class="row">
+      <h1>Facebook Birthday Analytics</h1>
+      <h1 class="subheader">Who really loves you?</h1>
+    </div>
+    <div class="row" ng-controller="AppCtrl">
+      <div class="large-12 columns">
+        <a href="#" onclick="login()"class="button">Facebook Login</a>
+        <div id="fb-root"></div>
+        <h3 ng-model="welcome"></h3>
+      </div>
+    </div>
+  </body>
+</html>
